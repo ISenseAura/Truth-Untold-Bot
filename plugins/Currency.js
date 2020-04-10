@@ -68,14 +68,14 @@ module.exports = {
   hasCurrency(user, room) {
     let db = Storage.databases;
 
-    if (db[room.id] || !db[room.id][user.id] || !db[room.id][user.id].currency)
+    if (!db[room.id] || !db[room.id][user.id] || !db[room.id][user.id].currency)
       return false;
     return true;
   },
 
   get(user, room) {
     let db = Storage.databases;
-    if (this.hasCurrency(user, room))
+    if (!this.hasCurrency(user, room))
       return user.name + " has no currency not even ZERO!";
     return db[room.id][user.id].currency.amount;
   }
