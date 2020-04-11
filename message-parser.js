@@ -119,6 +119,8 @@ class Context {
     if(this.room == this.user){
   if(Commands[command].chatOnly && !this.user.isDeveloper()) return false;
 }
+    else if(Commands[command].room && !Commands[command].room.includes(this.room.id)) return;
+
  else{
       if(Commands[command].pmOnly && !this.user.isDeveloper()) return false;
     }
