@@ -226,6 +226,20 @@ class MessageParser {
 			break;
 		}
 		case 'tournament': {
+			if(splitMessage[0] == "end") {
+				let data = JSON.parse(splitMessage.slice(1).join("|"));
+        console.log(data)
+				if (!data || !(data instanceof Object)) return;
+        if(data.results[0][0].length > 1) {
+          
+        }
+        room.say(`/adduhtml TOUR,<div class="broadcast-green">${data.results[0][0]} has earned ${Currency.TOUR} ${Currency.name} for winning the Tournament!</div> `);
+
+        Currency.give(Users.get(Tools.toId(data.results[0][0])),room,parseInt(Currency.TOUR), " For winning " + data.format + " tournament");
+				
+			}
+			
+			
 			if (!Config.tournaments || !Config.tournaments.includes(room.id)) return;
 			switch (splitMessage[0]) {
 			case 'create': {
