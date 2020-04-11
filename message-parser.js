@@ -473,6 +473,13 @@ if(!gc && realmsg == "invite me") return user.say("aww sorry Groupchat not found
 		}
 		case 'raw': {
 			let message = splitMessage.join('|');
+      console.log()
+      if(message.includes('<div class="broadcast-green">') && message.includes('Congratulations') && message.includes('UNO')) {
+        if(!Config.roomSettings[room.id].UNO) return;
+        let a = message.split(" ");
+        room.say(`/adduhtml UNO,<div class="broadcast-green">${a[3]} has earned ${Currency.UNO} ${Currency.name} for winning the game of UNO!</div> `);
+        Currency.give(Users.get(Tools.toId(a[3])),room,parseInt(Currency.UNO),"For winning UNO game")
+      }
 			if (message.includes('<div class="broadcast-red">') && message.includes('The server is restarting soon.')) {
 				Client.lockdown = true;
 			} else if (message.includes('<div class="broadcast-green">') && message.includes('The server restart was canceled.')) {
