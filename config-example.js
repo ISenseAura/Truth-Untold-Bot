@@ -15,6 +15,9 @@ exports.username = "username";
 exports.password = "password";
 
 exports.currency = "Currency name";
+exports.roomSettings = {
+  "groupchat-digimonshowdown-casino" : { UNO : true, TOUR : true },
+}
 // The server address to which Cassius will connect
 exports.server = "";
 
