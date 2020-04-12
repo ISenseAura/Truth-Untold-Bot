@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/sirDonovan/Cassius.svg)](https://travis-ci.org/sirDonovan/Cassius)
 
-A bot for [Pokemon Showdown][1].
+A bot for [Pokemon Showdown][1]
 
   [1]: https://github.com/Zarel/Pokemon-Showdown
 
