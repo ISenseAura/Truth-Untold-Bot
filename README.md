@@ -1,6 +1,5 @@
 # Truth Untold.
 
-
 [![Build Status](https://travis-ci.org/sirDonovan/Cassius.svg)](https://travis-ci.org/sirDonovan/Cassius)
 
 A bot for [Pokemon Showdown][1]
