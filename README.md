@@ -53,8 +53,7 @@ From this point on, you can start the bot by running the following command:
 [10]: https://github.com/sirDonovan/Cassius
   [7]: https://github.com/Zerapium/Truth-Untold-Bot/graphs/contributors
 
-## License
-
+## License.
   Truth Untold is distributed under the terms of the [MIT License][8].
 
   [8]: https://github.com/sirDonovan/Cassius/blob/master/LICENSE
