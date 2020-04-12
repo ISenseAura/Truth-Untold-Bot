@@ -1,4 +1,4 @@
-# Truth Untold
+# Truth Untold.
 
 [![Build Status](https://travis-ci.org/sirDonovan/Cassius.svg)](https://travis-ci.org/sirDonovan/Cassius)
 
