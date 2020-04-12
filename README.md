@@ -50,7 +50,7 @@ From this point on, you can start the bot by running the following command:
 
   [6]: https://github.com/sirDonovan
 [10]: https://github.com/sirDonovan/Cassius
-  [7]: https://github.com/sirDonovan/Cassius/graphs/contributors
+  [7]: https://github.com/Zerapium/Truth-Untold-Bot/graphs/contributors
 
 ## License
 
