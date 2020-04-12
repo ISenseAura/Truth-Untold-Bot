@@ -8,7 +8,7 @@ A bot for [Pokemon Showdown][1].
 ## Installation
 Cassius requires [Node.js][3] version 6.0.0 or later and a command line (e.g. `Command Prompt` on Windows or `Terminal` on Mac OS/Linux) to run. Once you have compatible software, complete installation by following these steps:
 
-1. Obtain a copy of Cassius
+1. Obtain a copy of Truth Untold
 
   You can do this through the [GitHub client][4] by clicking the "Clone or download" button on the home page of the repository and then clicking "Open in Desktop". You can also use the following [Git][5] command:
   
