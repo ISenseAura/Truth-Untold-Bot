@@ -20,7 +20,7 @@ Cassius requires [Node.js][3] version 6.0.0 or later and a command line (e.g. `C
   [9]: https://github.com/Zerapium
 2. Navigate to the root directory
 
-  The remaining steps will take place in the root directory of your Cassius files. Navigate there with the command:
+  The remaining steps will take place in the root directory of your Truth Untold files. Navigate there with the command:
 
   `cd DIRECTORY`
   
