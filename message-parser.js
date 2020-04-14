@@ -125,9 +125,16 @@ class Context {
       if(Commands[command].pmOnly && !this.user.isDeveloper()) return false;
     }
 		try {
+			if(Commands[command].onCooldown) return this.user.say("Command on cooldown")
 			// @ts-ignore Typescript bug - issue #10530
 		if(Commands[command].command){
 			Commands[command].command.call(this, target, this.room, this.user, originalCommand, this.time);
+			if(typeof Commands[command].cooldown == typeof 5) {
+        Commands[command].onCooldown = true;
+        let time = Commands[command].cooldown
+        function a() { Commands[command].onCooldown = false; }
+        setTimeout(a, time);
+			}
 			}
 			else{
 			Commands[command].call(this, target, this.room, this.user, originalCommand, this.time);
