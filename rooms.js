@@ -33,7 +33,7 @@ class Room {
     if(Config.level.includes(this.id)) this.level = true;
 	    if(Config.msglogs.includes(this.id)) this.logChatMessages = true;
 		if(!Storage.databases[this.id]) Storage.databases[this.id] = {}
-    this.shop = Storage.databases[this.id].shop ? Storage.databases[this.id].shop : new Shop(this,Date);
+    this.shop = Storage.databases[this.id].shop ? Storage.databases[this.id].shop : new Shop(this.Date);
 
   }
 
