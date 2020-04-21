@@ -9,6 +9,8 @@
 
 'use strict';
 const request = require('request');
+let Storage = require("./storage.js");
+let Shop = require("./plugins/Shop.js");
 const webhook = '';
 
 class Room {
